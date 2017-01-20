@@ -1,0 +1,11 @@
+---- eventadd Matches (9 in 3 files) ----
+
+Common.c:	eventadd(EPOLLIN | EPOLLET | EPOLLOUT, edata);    // listen fd   epoll in  
+Common.c:	eventadd(EPOLLIN, edata);    // listen fd   epoll in  
+Epoll.c:void eventadd(int events, struct event_data_s *ev)
+Epoll_loop.c (f:\baiduyundownload\资料\linux服务器开发三-网络编程资料\第四天资料\4-源代码\moreio_concurrent\epoll_et_lt):void eventadd(int events, struct myevent_s *ev)
+Epoll_loop.c (f:\baiduyundownload\资料\linux服务器开发三-网络编程资料\第四天资料\4-源代码\moreio_concurrent\epoll_et_lt):        eventadd(g_efd, EPOLLIN, &g_events[i]);                         //将cfd添加到红黑树g_efd中,监听读事件
+Epoll_loop.c (f:\baiduyundownload\资料\linux服务器开发三-网络编程资料\第四天资料\4-源代码\moreio_concurrent\epoll_et_lt):        eventadd(g_efd, EPOLLOUT, ev);                      //将fd加入红黑树g_efd中,监听其写事件
+Epoll_loop.c (f:\baiduyundownload\资料\linux服务器开发三-网络编程资料\第四天资料\4-源代码\moreio_concurrent\epoll_et_lt):        eventadd(g_efd, EPOLLIN, ev);                       //从新添加到红黑树上， 设为监听读事件
+Epoll_loop.c (f:\baiduyundownload\资料\linux服务器开发三-网络编程资料\第四天资料\4-源代码\moreio_concurrent\epoll_et_lt):    /* void eventadd(int efd, int events, struct myevent_s *ev) */
+Epoll_loop.c (f:\baiduyundownload\资料\linux服务器开发三-网络编程资料\第四天资料\4-源代码\moreio_concurrent\epoll_et_lt):    eventadd(efd, EPOLLIN, &g_events[MAX_EVENTS]);
